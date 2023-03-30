@@ -9,11 +9,13 @@
 
 ## Local Setup
 
-1. Clone the repo and use the default branch **develop**
-2. Use the given .env file
-3. Generate key - **php artisan key:generate**
-4. Run Composer Install with **PHP Version 7.4**
-5. Create Virtual Host or Run in local server - **php artisan serve**
+1. Clone the repository from GitHub - git clone https://github.com/rm-marzan/pm-vault-api.git
+2. Use the Default Branch **develop**
+3. Create a MySQL database with the name **pvault_laravel** (version 8.0.27).
+4. Install Composer 2 (if not already installed) and run the command **composer install**, using PHP version 7.4.26.
+5. Run the command **php artisan migrate** to create the necessary database tables.
+6. Run the command **php artisan serve** to start the Laravel server.
+7. The project should now be accessible at http://127.0.0.1:8000.
 
 ## About Laravel
 
