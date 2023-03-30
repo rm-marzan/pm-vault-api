@@ -9,10 +9,11 @@
 
 ## Local Setup
 
-1. Use the given .env file
-2. Generate key - **php artisan key:generate**
-3. Run Composer Install with **PHP Version 7.4**
-4. Create Virtual Host or Run in local server - **php artisan serve**
+1. Clone the repo and use the default branch **develop**
+2. Use the given .env file
+3. Generate key - **php artisan key:generate**
+4. Run Composer Install with **PHP Version 7.4**
+5. Create Virtual Host or Run in local server - **php artisan serve**
 
 ## About Laravel
 
