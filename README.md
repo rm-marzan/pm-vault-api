@@ -7,6 +7,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Local Setup
+
+1. Use the given .env file
+2. Generate key - **php artisan key:generate**
+3. Run Composer Install with **PHP Version 7.4**
+4. Create Virtual Host or Run in local server - **php artisan serve**
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
