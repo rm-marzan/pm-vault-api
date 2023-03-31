@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Local Setup
+
+1. Clone the repository from GitHub - git clone https://github.com/rm-marzan/pm-vault-api.git
+2. Use the Default Branch **develop**
+3. Create a MySQL database with the name **pvault_laravel** (version 8.0.27).
+4. Install Composer 2 (if not already installed) and run the command **composer install**, using PHP version 7.4.26.
+5. Run the command **php artisan migrate** to create the necessary database tables.
+6. Run the command **php artisan serve** to start the Laravel server.
+7. The project should now be accessible at http://127.0.0.1:8000.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
