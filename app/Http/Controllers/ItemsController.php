@@ -226,22 +226,21 @@ class ItemsController extends Controller
         if($userId !== Auth::user()->id){
             return response()->json(['message' => 'Unauthorized'], 403);
         }
-
-        $success = true;
+        
         $items = [];
+        $success = true;
         $isSoftDelete = false;
         $msg = "Items deleted successfully";
         $itemIds = $request->input('selectedItems');
         foreach($itemIds as $id){
-            $item = Item::withTrashed()
-            ->find($id)
-            ->with(['organization', 'folder', 'login', 'card', 'identity'])
-            ->first();
+            $ids[] = $id;
+            $item = Item::withTrashed()->find($id);
 
             if($item){
                 if($item->deleted_at == null){
                     $item->delete();
                     $isSoftDelete = true;
+                    $item->load(['organization', 'folder', 'login', 'card', 'identity']);
                     $items[] = $item;
                 }
                 else{

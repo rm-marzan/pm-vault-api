@@ -77,6 +77,6 @@ class Item extends Model
 
     public function identity()
     {
-        return $this->hasOne(identity::class);
+        return $this->hasOne(Identity::class);
     }
 }
